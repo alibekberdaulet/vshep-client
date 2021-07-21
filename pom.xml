@@ -14,6 +14,21 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>kz.gov.pki.kalkan</groupId>
+            <artifactId>kalkancrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>kz.gov.pki.provider</groupId>
+            <artifactId>knca-provider-util</artifactId>
+            <version>0.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>kz.gov.pki.kalkan</groupId>
+            <artifactId>kalkancrypt_xmldsig</artifactId>
+            <version>0.3</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
             <groupId>commons-io</groupId>
@@ -30,12 +45,6 @@
             <groupId>org.apache.ws.security</groupId>
             <artifactId>wss4j</artifactId>
             <version>1.6.19</version>
-        </dependency>
-        <dependency>
-            <groupId>kz.inessoft.proon</groupId>
-            <artifactId>commonutils</artifactId>
-            <version>0.0.1</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.ws</groupId>
