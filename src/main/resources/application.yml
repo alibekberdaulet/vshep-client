@@ -1,0 +1,8 @@
+server:
+  port: 8666
+  servlet:
+    context-path: /shep-client
+
+spring:
+  application:
+    name: uco-rest-client

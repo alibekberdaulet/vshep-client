@@ -17,8 +17,7 @@ public class BeanConfig {
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
         String[] packagesToScan = {
-                "kz.uco.service.shep.channel.sync.ws",
-                "javax.xml.bind"
+                "kz.uco.service.shep.channel.sync.ws"
         };
         marshaller.setPackagesToScan(packagesToScan);
         return marshaller;
@@ -27,7 +26,7 @@ public class BeanConfig {
     @Bean
     public ShepServiceAdapter soapConnector(Jaxb2Marshaller marshaller) {
         ShepServiceAdapter client = new ShepServiceAdapter();
-        client.setDefaultUri("https://localhost:8080");
+        client.setDefaultUri("https://shep.egov.kz:19023/bip-external-sync/");
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         client.setInterceptors(new ClientInterceptor[]{
