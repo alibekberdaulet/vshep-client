@@ -48,7 +48,7 @@ import java.util.GregorianCalendar;
 import java.util.UUID;
 
 public class XMLSignUtils {
-    private static final Logger LOGGER = LoggerFactory.getLogger(kz.uco.shep.utils.XMLSignUtils.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(XMLSignUtils.class);
 
     static final String KEY_PASSWORD = "Aa123456";
     public static Resource loadEmployees() {
